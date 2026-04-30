@@ -41,38 +41,52 @@
 
 package lesson05.challenge02;
 
-//ここに問題1で作成したクラスに次の条件を足したクラスを作成してください。
-//フィールド名：name(String型)
+class Robot {
+	int energy;
+	String name;
+}//ここに問題1で作成したクラスに次の条件を足したクラスを作成してください。
+	//フィールド名：name(String型)
 
 public class RobotMaker {
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 
-        System.out.println("G博士：");
-        System.out.println("ようし試作機がうまく行ったから増やすぞ！\n");
-        System.out.println("Rさん：");
-        System.out.println("何体つくりますか？\n");
-        System.out.println("G博士：");
-        System.out.println("3体じゃ。それぞれ「RF1」「RF2」「RF3」と名付ける！\n");
-        System.out.println("Rさん：");
-        System.out.println("安易ですね。\n");
-        System.out.println("G博士：");
-        System.out.println("なんか言ったか？\n");
-        System.out.println("Rさん：");
-        System.out.println("いえ、何にも......はい、3体作って名前を付けましたよ。\n");
+		System.out.println("G博士：");
+		System.out.println("ようし試作機がうまく行ったから増やすぞ！\n");
+		System.out.println("Rさん：");
+		System.out.println("何体つくりますか？\n");
+		System.out.println("G博士：");
+		System.out.println("3体じゃ。それぞれ「RF1」「RF2」「RF3」と名付ける！\n");
+		System.out.println("Rさん：");
+		System.out.println("安易ですね。\n");
+		System.out.println("G博士：");
+		System.out.println("なんか言ったか？\n");
+		System.out.println("Rさん：");
+		System.out.println("いえ、何にも......はい、3体作って名前を付けましたよ。\n");
 
-        //ここにRobotクラスのインスタンスを３つ作り、
-        //（インスタンス名はrobot1、robot2、robot3）
-        //それぞれ名前を代入する処理を記述する。
+		Robot rob1 = new Robot();
+		rob1.energy = 10;
+		rob1.name = "RF1";
 
-        System.out.println("G博士：");
-        System.out.println("よし、では確認にため2番目のロボットの中を覗いてみよう。\n");
+		Robot rob2 = new Robot();
+		rob2.energy = 10;
+		rob2.name = "RF2";
 
-        //ここに2番目のインスタンスの名前を表示する処理を記述する
+		Robot rob3 = new Robot();
+		rob3.energy = 10;
+		rob3.name = "RF3";
+		//ここにRobotクラスのインスタンスを３つ作り、
+		//（インスタンス名はrobot1、robot2、robot3）
+		//それぞれ名前を代入する処理を記述する。
 
-        System.out.println("G博士：");
-        System.out.println("OKじゃ。\n");
+		System.out.println("G博士：");
+		System.out.println("よし、では確認にため2番目のロボットの中を覗いてみよう。\n");
 
-    }
+		System.out.println(rob2.name);//ここに2番目のインスタンスの名前を表示する処理を記述する
+
+		System.out.println("G博士：");
+		System.out.println("OKじゃ。\n");
+
+	}
 
 }
