@@ -94,24 +94,27 @@ public class WarehouseManager {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 		System.out.print("データ型を選んでください（1...文字、2...文字列、3...数値）＞");
-
+		String str = br.readLine();
+		int num = Integer.parseInt(str);
+		
 
 		//ここに入力処理を記述する。
-
 
 		System.out.print("\n要素数を選んでください（1...1個、2...2個、3...3個）＞");
 
-
 		//ここに入力処理を記述する。
 
-
 		boolean errFlag = false;
+		String str1 = br.readLine();
+		int num1 = Integer.parseInt(str1);
+		
+		
+		}
+	//ここに入力値の範囲チェック処理を記述する。
 
+	if(!errFlag)
 
-		//ここに入力値の範囲チェック処理を記述する。
-
-
-		if (!errFlag) {
+	{
 			System.out.println("\nZ先輩：");
 			System.out.println("中に入れる値はおまかせという事でよろしいですね。");
 			System.out.println("ご注文を承りました。\n");
@@ -126,10 +129,22 @@ public class WarehouseManager {
 			String[] strArray = null;
 			int[] intArray = null;
 
-
-			//ここに入力値による分岐および配列要素数の確定、
+			if (num==1) {
+				if (num1 == 1) {
+					charArray = new char[1];
+					charArray[0] = 'a';
+				} else if ( == 2) {
+					charArray = new char[2];
+					charArray[0] = 'a';
+					charArray[1] = 'b';
+				} else {
+					charArray = new char[3];
+					charArray[0] = 'a';
+					charArray[1] = 'b';
+					charArray[2] = 'c';
+				
+			}//ここに入力値による分岐および配列要素数の確定、
 			//値の代入処理を記述する。
-
 
 			System.out.println("Yさん：");
 			System.out.println("...出来ました。\n");
@@ -139,9 +154,7 @@ public class WarehouseManager {
 
 			System.out.println("Yさん：");
 
-
 			//ここに入力値による分岐および配列要素の表示処理を記述する。
-
 
 			System.out.println("です。\n");
 

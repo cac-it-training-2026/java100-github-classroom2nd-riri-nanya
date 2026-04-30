@@ -38,7 +38,7 @@ public class Detective {
 
 	public static void main(String[] args) {
 
-		int height = 190;
+		int height = 170;
 
 		System.out.println("探偵：");
 		System.out.println("宝石を置いていた場所はどこですか？\n");
@@ -46,6 +46,14 @@ public class Detective {
 		System.out.println("あの棚の上です\n");
 		System.out.println("探偵：");
 		System.out.println("犯人は...");
+
+		if (height > 185) {
+			System.out.println("背の高い人ですね");
+
+		} else {
+			System.out.println("背の低い人ですね");
+
+		}
 
 		// ここにif～else文を入れる
 
